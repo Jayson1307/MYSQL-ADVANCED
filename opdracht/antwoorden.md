@@ -21,7 +21,10 @@
 
 4. Copy paste je gemaakte SQL query hieronder
 
-    -
+    -SELECT constructors.name, races.name  FROM constructor_standing 
+    LEFT JOIN constructors on constructor_standing.constructorId = constructors.constructorId
+    LEFT JOIN races ON constructor_standing.raceId = races.raceId
+    WHERE constructors.constructorId = 1 AND races.year = 2010
    
 5. Copy paste je gemaakte SQL query hieronder
    
