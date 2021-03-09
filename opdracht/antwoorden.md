@@ -15,9 +15,13 @@
     
 3. Copy paste je gemaakte SQL query hieronder
     
-
+    -SELECT drivers.forename AS voornaam, drivers.surname AS achternaam, duration FROM pitstops
+    LEFT JOIN drivers on pitstops.driverId = drivers.driverId
+    WHERE duration < 25
 
 4. Copy paste je gemaakte SQL query hieronder
+
+    -
    
 5. Copy paste je gemaakte SQL query hieronder
    
