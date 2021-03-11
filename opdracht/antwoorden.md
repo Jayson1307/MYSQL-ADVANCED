@@ -27,4 +27,9 @@
     WHERE constructors.constructorId = 1 AND races.year = 2010
    
 5. Copy paste je gemaakte SQL query hieronder
+    -SELECT circuits.name AS circuitname, circuits.country, races.name AS racename, drivers.surname FROM circuits
+    INNER JOIN races ON races.raceId = circuits.circuitId
+    INNER JOIN driver_standing ON driver_standing.raceId = races.raceId
+    INNER JOIN drivers ON drivers.driverId = driver_standing.driverId
+    WHERE drivers.surname = "F%" AND races.year = 1950
    
